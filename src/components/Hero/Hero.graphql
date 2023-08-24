@@ -1,0 +1,9 @@
+query {
+  item(path: "/sitecore/content/Home", language: "en") {
+    field(name: "text") {
+      ... on RichTextField {
+        value
+      }
+    }
+  }
+}
